@@ -3,7 +3,7 @@ name: create-artifact
 on: push
 
 env:
-  ARTIFACT_NAME: myArtifact01
+  ARTIFACT_NAME: my-artifact
 
 jobs:
   ubuntu:
@@ -14,5 +14,5 @@ jobs:
     - name: upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
-        name: linux
-        path: ${{ env.ARTIFACT_NAME }}
+        name: ${{ env.ARTIFACT_NAME }}
+        path: .
