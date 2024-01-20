@@ -1,2 +1,2 @@
 # github-actions-workflow-create-artifact
-A workflow that created artifact
+A workflow that creates artifact
